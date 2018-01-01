@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                xmlns:wheel="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:background="@drawable/series_results_background"
+                android:layout_height="match_parent">
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progressWheel"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        wheel:matProg_barColor="#F42727"
+        wheel:matProg_progressIndeterminate="true"
+        android:visibility="invisible"
+        />
+
+    <TextView
+        android:id="@android:id/empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="No Series Results"
+        android:textSize="18sp"/>
+
+    <ListView
+        android:id="@android:id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/previousResultsButton"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:id="@+id/previousResultsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:text="Previous"
+        tools:text="Previous"/>
+
+    <Button
+        android:id="@+id/nextResultsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="Next"/>
+
+    <TextView
+        android:id="@+id/pageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/previousResultsButton"
+        android:layout_alignBottom="@+id/previousResultsButton"
+        android:layout_centerHorizontal="true"
+        android:text="Calculating . . . "
+        android:textSize="18sp"/>
+
+
+</RelativeLayout>

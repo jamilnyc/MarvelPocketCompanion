@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/series_detail_background"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp">
+
+            <ImageView
+                android:id="@+id/seriesDetailThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:padding="0dp"
+                app:srcCompat="@drawable/sample_portrait_uncanny"/>
+
+            <TextView
+                android:id="@+id/seriesDetailTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:text="Generic Series Name (2000 - 2016)"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="40sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/seriesDetailBuyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="5dp"
+                android:background="@android:color/holo_green_dark"
+                android:drawableLeft="@drawable/cart"
+                android:drawablePadding="10dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp"
+                android:text="Find At Midtown Comics"
+                android:textColor="@android:color/white"/>
+
+            <TextView
+                android:id="@+id/seriesDetailType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Comic Type"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/seriesDetailRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Age Rating: A"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/seriesDetailStartYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start Year: 2000"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/seriesDetailEndYear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End Year: 2016"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/seriesDetailDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/comic_text_rounded_rectangle"
+                android:text="Description: The quick red fox jums over the lazy brown dog. The quick red fox jumps over the lazy brown dog."
+                android:textColor="@android:color/black"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:id="@+id/seriesDetailContributorsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="CONTRIBUTORS:"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <GridLayout
+                android:id="@+id/seriesDetailContributorGrid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:columnCount="2">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="5"
+                    android:text="Contribute A"/>
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="3"
+                    android:text="Role A"/>
+            </GridLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

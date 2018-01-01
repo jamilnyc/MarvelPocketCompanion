@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Marvel Pocket Companion</string>
+    <string name="title_activity_search_result">SearchResultActivity</string>
+    <string name="no_results_message">Sorry, but there are no results. :-(</string>
+    <string name="project_credit">App by jamilnyc</string>
+    <string name="content_description_email_button">Tap here to send a support e-mail</string>
+    <string name="content_description_phone_button">Tap here to call customer support.</string>
+    <string name="content_description_about_close">Tap here to close this About screen</string>
+    <string name="search_placeholder">e.g. Spider-Man</string>
+    <string name="search_button_text">Search</string>
+    <string name="history_label">History</string>
+    <string name="content_description_about_button">Open About Screen for customer support</string>
+    <string name="content_description_clear_history">Clear your recent search history and caches</string>
+    <string name="content_description_series_item_thumbnail_placeholder">Placeholder for Series Thumbnail</string>
+    <string name="series_item_name_placeholder">Generic Series Name (2000)</string>
+    <string name="series_item_type_placeholder">Trade Paperback</string>
+    <string name="content_description_character_item_thumbnail_placeholder">Placeholder for Character Item Thumbnail</string>
+    <string name="character_item_name_placeholder">Generic Super Hero Name</string>
+</resources>

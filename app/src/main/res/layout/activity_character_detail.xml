@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/character_detail_background"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+    >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/characterThumbnail"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                app:srcCompat="@drawable/sample_xlarge"/>
+
+            <TextView
+                android:id="@+id/characterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:text="Generic Super Hero Name"
+                android:textColor="@android:color/black"
+                android:textSize="48sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/characterDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/comic_text_rounded_rectangle"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum molestie, ipsum vel sodales volutpat, urna tortor blandit nulla, et aliquet dui tellus a sapien. Ut tincidunt turpis felis, ornare faucibus justo accumsan a. Nunc faucibus laoreet leo in ornare."
+                android:textColor="@android:color/black"
+                android:textSize="18sp"/>
+
+            <Button
+                android:id="@+id/characterWikiButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="View Character Wiki"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/characterSeriesButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Reading Recommendations"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

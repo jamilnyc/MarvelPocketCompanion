@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/main_bg"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp">
+
+    <EditText
+        android:id="@+id/searchQuery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/searchButton"
+        android:layout_toStartOf="@+id/searchButton"
+        android:ems="10"
+        android:hint="@string/search_placeholder"
+        android:inputType="textPersonName"
+        android:textSize="26sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/searchButton"/>
+
+    <Button
+        android:id="@+id/searchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/holo_blue_dark"
+        android:text="@string/search_button_text"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/recentSearchesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/recentSearchesLabel"
+        android:gravity="start"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/recentSearchesLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/searchQuery"
+        android:layout_marginTop="20dp"
+        android:text="@string/history_label"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"/>
+
+    <ImageButton
+        android:id="@+id/aboutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="?android:selectableItemBackground"
+        android:padding="0dp"
+        app:srcCompat="@drawable/info_small"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="@string/content_description_about_button"/>
+
+    <ImageButton
+        android:id="@+id/clearHistoryButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:background="?android:selectableItemBackground"
+        android:padding="0dp"
+        app:srcCompat="@drawable/reload"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:contentDescription="@string/content_description_clear_history"/>
+
+
+</RelativeLayout>

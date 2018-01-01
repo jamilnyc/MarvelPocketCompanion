@@ -1,0 +1,6 @@
+* Search on Enter Key
+* Click on recent history
+* Add error handling on duplicate insertions (update instead for example)
+* Allow previous and next if caching is available
+* Reintroduce ButterKnife
+* Page Flipping effect library
