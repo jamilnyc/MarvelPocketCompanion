@@ -6,6 +6,16 @@
                 android:background="@drawable/character_results_background"
                 android:layout_height="match_parent">
 
+    <TextView
+        android:id="@+id/copyrightMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="Data Provided By Marvel. © 2014"
+        android:layout_below="@android:id/list"
+        android:gravity="center"/>
+
     <com.pnikosis.materialishprogress.ProgressWheel
         android:id="@+id/progressWheel"
         android:layout_width="80dp"
@@ -29,10 +39,12 @@
     <ListView
         android:id="@android:id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/previousResultsButton"
+        android:layout_height="446dp"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"/>
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/previousResultsButton"
+        android:layout_marginLeft="0dp"
+        android:layout_marginStart="0dp" />
 
     <Button
         android:id="@+id/previousResultsButton"
